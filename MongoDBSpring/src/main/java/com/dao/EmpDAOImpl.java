@@ -17,12 +17,14 @@ import com.mongodb.client.MongoDatabase;
 @Repository
 public class EmpDAOImpl implements EmpDAO {
 
+
 	MongoClientURI clientURI = new MongoClientURI("mongodb+srv://sanjaypipaliya:sanjay@mongo-qsrz8.mongodb.net/admin");
 	MongoClient mongoClient = new MongoClient(clientURI);
 	MongoDatabase mongoDatabase = mongoClient.getDatabase("MyDB");
 	@SuppressWarnings("rawtypes")
 	MongoCollection collection = mongoDatabase.getCollection("emp");
 
+	
 	@SuppressWarnings("unchecked")
 	public void insert(Emp emp) {
 
