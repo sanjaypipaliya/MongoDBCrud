@@ -63,8 +63,7 @@ public class CrudController {
 		} catch (Exception e) {
 			e.printStackTrace();
 			return "/error/error";
-		}
-		
+		}		
 	}
 	
 	@RequestMapping("/delete/{id}")
