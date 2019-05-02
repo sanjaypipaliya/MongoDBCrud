@@ -69,7 +69,12 @@ public class CrudController {
 	@RequestMapping("/delete/{id}")
 	public String delete(@PathVariable("id") ObjectId objId) {
 		empSerivces.delete(objId);
+		
 		return "redirect:/crud/showEmps";
+	}
+	
+	public void insert() {
+		
 	}
 
 }
