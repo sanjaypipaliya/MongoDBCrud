@@ -73,8 +73,6 @@ public class CrudController {
 		return "redirect:/crud/showEmps";
 	}
 	
-	public void insert() {
-		
-	}
+}
 
 }
